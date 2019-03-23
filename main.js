@@ -36,6 +36,11 @@ function updatePage() {
     if( records.length <= 1 ) return;
 
     let newDistance = calculateDistance( records[0], records[ records.length-1 ]);
+	
+	// Liczenie średniej prędkości
+    //let newSpeed = calculateSpeed(records[0],records[records.length-1]);
+	
+	// Liczenie aktualnej prędkości	
     let newSpeed = calculateSpeed(records[records.length-2],records[records.length-1]);
 
     updateDistance( newDistance );
